@@ -4,7 +4,7 @@ calc.py: A simple command-line calculator
 import sys
 
 filename, num1, op, num2 = sys.argv
-num1, num2 = int(num1), int(num2)
+num1, num2 = float(num1), float(num2)
 
 if op == '+':
     # Only supports addition now
