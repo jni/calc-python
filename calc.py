@@ -1,3 +1,6 @@
+"""
+calc.py: A simple command-line calculator
+"""
 import sys
 
 filename, num1, op, num2 = sys.argv
