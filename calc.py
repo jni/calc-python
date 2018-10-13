@@ -13,7 +13,11 @@ elif op == '-':
 elif op == 'x':
     print(num1 * num2)
 elif op == '/':
-    print(num1 / num2)
+    x = input("Type 'DP' for decimal point result ; 'QR' for getting quotient and remainder ->\n--> ")
+    if x == 'DP' or x == 'dp' or x == 'Dp' or x == 'dP':
+        print(num1 / num2)
+    elif x == 'QR' or x == 'qr' or x == 'Qr' or x == 'qR':
+        print("Quotient = " + str(int(num1 // num2)) + "\nRemainder = " + str(int(num1 % num2)))
 elif op == '^':
     print(num1 ** num2)
 else:
